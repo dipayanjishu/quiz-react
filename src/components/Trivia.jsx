@@ -61,9 +61,11 @@ const Trivia = ({
 
     if (a.correct) {
       setTimeout(() => {
-        setNext(true);
         correctAnswer();
       }, 5000);
+      setTimeout(() => {
+        setNext(true);
+      }, 7000);
     } else {
       setTimeout(() => {
         setStop(true);
@@ -74,39 +76,33 @@ const Trivia = ({
 
   return (
     <div className="trivia">
-      {questionNumber === 6 ? (
-        <h1>laura</h1>
-      ) : (
-        <>
-          <div className="top">
-            <div className="timer">
-              <Timer
-                setStop={setStop}
-                questionNumber={questionNumber}
-                click={click}
-                setClick={setClick}
-              />
-            </div>
-          </div>
-          <div className="question">{question?.question}</div>
-          <div className="answers">
-            {question?.answers.map((a) => (
-              <div
-                className={selectedAnswer === a ? className : "answer"}
-                onClick={() => handleClick(a)}
-              >
-                {a.text}
-              </div>
-            ))}
-          </div>
+      <div className="top">
+        <div className="timer">
+          <Timer
+            setStop={setStop}
+            questionNumber={questionNumber}
+            click={click}
+            setClick={setClick}
+          />
+        </div>
+      </div>
+      <div className="question">{question?.question}</div>
+      <div className="answers">
+        {question?.answers.map((a) => (
           <div
-            className={next === false ? "next" : "next active"}
-            onClick={handleNext}
+            className={selectedAnswer === a ? className : "answer"}
+            onClick={() => handleClick(a)}
           >
-            Next
+            {a.text}
           </div>
-        </>
-      )}
+        ))}
+      </div>
+      <div
+        className={next === false ? "next" : "next active"}
+        onClick={handleNext}
+      >
+        Next
+      </div>
     </div>
   );
 };
