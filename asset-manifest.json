@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quiz-react/static/css/main.71d83a70.css",
-    "main.js": "/quiz-react/static/js/main.5273a455.js",
+    "main.css": "/quiz-react/static/css/main.9d7e071f.css",
+    "main.js": "/quiz-react/static/js/main.8a5a9cad.js",
     "static/js/845.f7e20457.chunk.js": "/quiz-react/static/js/845.f7e20457.chunk.js",
     "static/media/background.mp3": "/quiz-react/static/media/background.2b4e0c695f87fdf4ec7d.mp3",
     "static/media/ghungru.gif": "/quiz-react/static/media/ghungru.15b59a59c11b369a43da.gif",
@@ -11,12 +11,12 @@
     "static/media/mainak khanki.mp3": "/quiz-react/static/media/mainak khanki.504f8a5fee72bc3d5c13.mp3",
     "static/media/tudung tudung.mp3": "/quiz-react/static/media/tudung tudung.9edcac099999add579e2.mp3",
     "index.html": "/quiz-react/index.html",
-    "main.71d83a70.css.map": "/quiz-react/static/css/main.71d83a70.css.map",
-    "main.5273a455.js.map": "/quiz-react/static/js/main.5273a455.js.map",
+    "main.9d7e071f.css.map": "/quiz-react/static/css/main.9d7e071f.css.map",
+    "main.8a5a9cad.js.map": "/quiz-react/static/js/main.8a5a9cad.js.map",
     "845.f7e20457.chunk.js.map": "/quiz-react/static/js/845.f7e20457.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71d83a70.css",
-    "static/js/main.5273a455.js"
+    "static/css/main.9d7e071f.css",
+    "static/js/main.8a5a9cad.js"
   ]
 }
