@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import Timer from "./Timer";
+import Celebration from "./Celebration";
+
 import useSound from "use-sound";
 import correct from "../assets/mainak khanki.mp3";
 import wrong from "../assets/babu mere chole galo.mp3";
@@ -8,6 +10,7 @@ import play from "../assets/tudung tudung.mp3";
 import back from "../assets/background.mp3";
 
 const Trivia = ({
+  username,
   data,
   setStop,
   questionNumber,
@@ -27,7 +30,7 @@ const Trivia = ({
 
   useEffect(() => {
     letsPlay();
-  }, [letsPlay, questionNumber]);
+  }, [letsPlay]);
 
   useEffect(() => {
     background();
@@ -75,34 +78,40 @@ const Trivia = ({
   };
 
   return (
-    <div className="trivia">
-      <div className="top">
-        <div className="timer">
-          <Timer
-            setStop={setStop}
-            questionNumber={questionNumber}
-            click={click}
-            setClick={setClick}
-          />
-        </div>
-      </div>
-      <div className="question">{question?.question}</div>
-      <div className="answers">
-        {question?.answers.map((a) => (
-          <div
-            className={selectedAnswer === a ? className : "answer"}
-            onClick={() => handleClick(a)}
-          >
-            {a.text}
+    <div className="celeb">
+      {questionNumber === 11 ? (
+        <Celebration username={username} />
+      ) : (
+        <div className="trivia">
+          <div className="top">
+            <div className="timer">
+              <Timer
+                setStop={setStop}
+                questionNumber={questionNumber}
+                click={click}
+                setClick={setClick}
+              />
+            </div>
           </div>
-        ))}
-      </div>
-      <div
-        className={next === false ? "next" : "next active"}
-        onClick={handleNext}
-      >
-        Next
-      </div>
+          <div className="question">{question?.question}</div>
+          <div className="answers">
+            {question?.answers.map((a) => (
+              <div
+                className={selectedAnswer === a ? className : "answer"}
+                onClick={() => handleClick(a)}
+              >
+                {a.text}
+              </div>
+            ))}
+          </div>
+          <div
+            className={next === false ? "next" : "next active"}
+            onClick={handleNext}
+          >
+            Next
+          </div>
+        </div>
+      )}
     </div>
   );
 };

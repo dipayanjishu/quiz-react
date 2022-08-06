@@ -4,7 +4,7 @@ import { BiRupee } from "react-icons/bi";
 import Trivia from "./components/Trivia";
 import Face from "./assets/bagha face.png";
 import Start from "./components/Start";
-
+import { Data } from "./components/Data.js";
 // import Timer from "./components/Timer";
 
 const App = () => {
@@ -20,128 +20,22 @@ const App = () => {
   // const [click, setClick] = useState(false);
 
   // FOR DATA
-  const data = [
-    {
-      id: 1,
-      question: "Rolex is a company that specializes in what type of product?",
-      answers: [
-        {
-          text: "Phone",
-          correct: false,
-        },
-        {
-          text: "Watches",
-          correct: true,
-        },
-        {
-          text: "Food",
-          correct: false,
-        },
-        {
-          text: "Cosmetic",
-          correct: false,
-        },
-      ],
-    },
-    {
-      id: 2,
-      question: "When did the website `Facebook` launch?",
-      answers: [
-        {
-          text: "2004",
-          correct: true,
-        },
-        {
-          text: "2005",
-          correct: false,
-        },
-        {
-          text: "2006",
-          correct: false,
-        },
-        {
-          text: "2007",
-          correct: false,
-        },
-      ],
-    },
-    {
-      id: 3,
-      question: "Who played the character of harry potter in movie?",
-      answers: [
-        {
-          text: "Johnny Deep",
-          correct: false,
-        },
-        {
-          text: "Leonardo Di Caprio",
-          correct: false,
-        },
-        {
-          text: "Denzel Washington",
-          correct: false,
-        },
-        {
-          text: "Daniel Red Cliff",
-          correct: true,
-        },
-      ],
-    },
-    {
-      id: 4,
-      question: "Who played the character of harry potter in movie?",
-      answers: [
-        {
-          text: "Johnny Deep",
-          correct: false,
-        },
-        {
-          text: "Leonardo Di Caprio",
-          correct: false,
-        },
-        {
-          text: "Denzel Washington",
-          correct: false,
-        },
-        {
-          text: "Daniel Red Cliff",
-          correct: true,
-        },
-      ],
-    },
-    {
-      id: 5,
-      question: "Who played the character of harry potter in movie?",
-      answers: [
-        {
-          text: "Johnny Deep",
-          correct: false,
-        },
-        {
-          text: "Leonardo Di Caprio",
-          correct: false,
-        },
-        {
-          text: "Denzel Washington",
-          correct: false,
-        },
-        {
-          text: "Daniel Red Cliff",
-          correct: true,
-        },
-      ],
-    },
-  ];
+  const data = Data;
 
   // PYRAMID DATA
   const moneyPyramid = useMemo(
     () =>
       [
-        { id: 1, amount: "100" },
-        { id: 2, amount: "200" },
-        { id: 3, amount: "300" },
-        { id: 4, amount: "400" },
-        { id: 5, amount: "500" },
+        { id: 1, amount: "1" },
+        { id: 2, amount: "10,000" },
+        { id: 3, amount: "50,000" },
+        { id: 4, amount: "1,00,000" },
+        { id: 5, amount: "5,00,000" },
+        { id: 6, amount: "10,00,000" },
+        { id: 7, amount: "25,00,000" },
+        { id: 8, amount: "50,00,000" },
+        { id: 9, amount: "75,00,000" },
+        { id: 10, amount: "1,00,00,000" },
       ].reverse(),
     []
   );
@@ -172,6 +66,7 @@ const App = () => {
               <>
                 <div className="bottom">
                   <Trivia
+                    username={username}
                     data={data}
                     setStop={setStop}
                     questionNumber={questionNumber}
