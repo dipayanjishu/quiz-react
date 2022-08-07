@@ -4,7 +4,7 @@ const Data = [
     question: "Mainak?",
     answers: [
       {
-        text: "bokachoda",
+        text: "Pod Byabsayi",
         correct: false,
       },
       {
@@ -70,8 +70,8 @@ const Data = [
     question: "Atharv?",
     answers: [
       {
-        text: "Gamcha",
-        correct: false,
+        text: "Buro butKhara",
+        correct: true,
       },
       {
         text: "Buro Choda",
@@ -81,10 +81,7 @@ const Data = [
         text: "Kana Choda",
         correct: false,
       },
-      {
-        text: "Buro butKhara",
-        correct: true,
-      },
+      { text: "Gamcha", correct: false },
     ],
   },
   {
@@ -119,7 +116,7 @@ const Data = [
       },
       {
         text: "Birjo Sen",
-        correct: false,
+        correct: true,
       },
       {
         text: "Bichi Chos",
@@ -127,7 +124,7 @@ const Data = [
       },
       {
         text: "Futor",
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -145,11 +142,11 @@ const Data = [
       },
       {
         text: "Bibahito",
-        correct: false,
+        correct: true,
       },
       {
         text: "Amazon",
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -159,11 +156,11 @@ const Data = [
     answers: [
       {
         text: "Dipayan",
-        correct: false,
+        correct: true,
       },
       {
         text: "Bhalo chele",
-        correct: false,
+        correct: true,
       },
       {
         text: "Bokachoda",
@@ -181,7 +178,7 @@ const Data = [
     answers: [
       {
         text: "Borolok",
-        correct: false,
+        correct: true,
       },
       {
         text: "KotiPoti",
@@ -193,7 +190,7 @@ const Data = [
       },
       {
         text: "Big Bull",
-        correct: true,
+        correct: false,
       },
     ],
   },

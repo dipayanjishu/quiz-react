@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function Timer({ setStop, questionNumber, click, setClick }) {
-  const [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(240);
 
   useEffect(() => {
     if (timer === 0) return setStop(true);
@@ -14,7 +14,7 @@ export default function Timer({ setStop, questionNumber, click, setClick }) {
   }, [setStop, timer, click]);
 
   useEffect(() => {
-    setTimer(30);
+    setTimer(240);
     setClick(false);
   }, [questionNumber, setClick]);
 

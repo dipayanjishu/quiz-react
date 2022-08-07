@@ -5,6 +5,7 @@ import Trivia from "./components/Trivia";
 import Face from "./assets/bagha face.png";
 import Start from "./components/Start";
 import { Data } from "./components/Data.js";
+
 // import Timer from "./components/Timer";
 
 const App = () => {
@@ -67,6 +68,7 @@ const App = () => {
                 <div className="bottom">
                   <Trivia
                     username={username}
+                    setUsername={setUsername}
                     data={data}
                     setStop={setStop}
                     questionNumber={questionNumber}

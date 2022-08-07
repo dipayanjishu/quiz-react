@@ -1,3 +1,9 @@
+:root {
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
 .app {
   height: 100vh; /*for fullscreen, if disable then it will not*/
   display: flex; /*for alongside*/
@@ -7,6 +13,7 @@
 
 .main {
   /* 3unit of app */
+
   width: 75%;
   background-image: url("./assets/bg-texture.png");
   display: flex;
@@ -42,6 +49,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  width: 90%;
 }
 
 .question {
@@ -77,6 +85,7 @@
 .answer:hover,
 .answer.active {
   background: #c84b31;
+  transition: all 200ms ease;
 }
 
 .answer.correct {
@@ -136,7 +145,7 @@
   background-color: #c84b31;
   width: 20%;
   height: 5%;
-  border: 3px solid white;
+  border: 2px solid white;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -147,6 +156,7 @@
 
 .next.active:hover {
   background: transparent;
+  transition: all 400ms ease;
 }
 
 .pyramid {
@@ -168,10 +178,11 @@
 }
 
 .moneyListItem {
+  margin: 10px;
   display: flex;
   align-items: center;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 30px;
   justify-content: center;
 }
 
@@ -190,27 +201,27 @@
   font-weight: 300;
 }
 
-.result {
+.celeb {
   /* background-color: red; */
-  /* margin: 10px; */
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
-  position: relative;
+  justify-content: center;
+  height: 100%;
+}
+.result {
+  margin-top: 30px;
+  background-color: black;
+  border: 2px solid white;
+  padding: 0 50px 0 50px;
+  padding: 0 50px 0 50px;
+  border-radius: 50px;
+  font-size: 40px;
 }
 
 .imagee {
-  width: 40%;
-}
-.message {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  border-radius: 5px;
-  justify-content: center;
+  border: 2px solid rgb(54, 38, 38);
+  border-radius: 50px;
 }
 
 .start {
@@ -248,4 +259,22 @@
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
+}
+
+.resetGame {
+  background-color: #c84b31;
+  transition: all 200ms ease;
+  padding: 10px;
+  font-weight: bolder;
+  margin: 30px;
+  border-radius: 30px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.resetGame:hover {
+  background: transparent;
+}
+
+/* ======================Media Queries(Small Devices)==================================== */
+@media screen and (max-width: 600px) {
 }
