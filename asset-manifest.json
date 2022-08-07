@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/quiz-react/static/css/main.9d7e071f.css",
-    "main.js": "/quiz-react/static/js/main.8a5a9cad.js",
-    "static/js/845.f7e20457.chunk.js": "/quiz-react/static/js/845.f7e20457.chunk.js",
+    "main.css": "/quiz-react/static/css/main.b5dcb42c.css",
+    "main.js": "/quiz-react/static/js/main.227ea108.js",
     "static/media/background.mp3": "/quiz-react/static/media/background.2b4e0c695f87fdf4ec7d.mp3",
+    "static/media/ticktock.mp3": "/quiz-react/static/media/ticktock.0e137ed02df4df7c28c3.mp3",
     "static/media/ghungru.gif": "/quiz-react/static/media/ghungru.15b59a59c11b369a43da.gif",
+    "static/media/hover.mp3": "/quiz-react/static/media/hover.923eea2890bff72fb662.mp3",
     "static/media/ghungru badha.mp3": "/quiz-react/static/media/ghungru badha.837981e6e20e7b655777.mp3",
     "static/media/bagha face.png": "/quiz-react/static/media/bagha face.499f6a2f530e16059523.png",
     "static/media/babu mere chole galo.mp3": "/quiz-react/static/media/babu mere chole galo.3f93389578dadc4d6e2f.mp3",
     "static/media/mainak khanki.mp3": "/quiz-react/static/media/mainak khanki.504f8a5fee72bc3d5c13.mp3",
     "static/media/tudung tudung.mp3": "/quiz-react/static/media/tudung tudung.9edcac099999add579e2.mp3",
+    "static/media/buzzer.mp3": "/quiz-react/static/media/buzzer.f2143a33b4e146194b8d.mp3",
     "index.html": "/quiz-react/index.html",
-    "main.9d7e071f.css.map": "/quiz-react/static/css/main.9d7e071f.css.map",
-    "main.8a5a9cad.js.map": "/quiz-react/static/js/main.8a5a9cad.js.map",
-    "845.f7e20457.chunk.js.map": "/quiz-react/static/js/845.f7e20457.chunk.js.map"
+    "main.b5dcb42c.css.map": "/quiz-react/static/css/main.b5dcb42c.css.map",
+    "main.227ea108.js.map": "/quiz-react/static/js/main.227ea108.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d7e071f.css",
-    "static/js/main.8a5a9cad.js"
+    "static/css/main.b5dcb42c.css",
+    "static/js/main.227ea108.js"
   ]
 }
