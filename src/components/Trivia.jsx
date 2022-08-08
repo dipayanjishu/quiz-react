@@ -99,7 +99,7 @@ const Trivia = ({
 
   return (
     <div className="celeb">
-      {questionNumber === 2 ? (
+      {questionNumber === 11 ? (
         <Celebration
           username={username}
           setUsername={setUsername}
@@ -122,23 +122,30 @@ const Trivia = ({
           <div className="question">{question?.question}</div>
           <div className="answers">
             {question?.answers.map((a) => (
-              <div
+              <button
+                type="button"
                 className={selectedAnswer === a ? className : "answer"}
                 onClick={() => handleClick(a)}
                 onMouseEnter={() => {
                   playBut();
                 }}
+                disabled={selectedAnswer === null ? false : true}
               >
                 {a.text}
-              </div>
+              </button>
             ))}
           </div>
-          <div
+          <button
             className={next === false ? "next" : "next active"}
             onClick={handleNext}
+            disabled={next ? false : true}
+            id="nextButton"
+            onMouseEnter={() => {
+              playBut();
+            }}
           >
             Next
-          </div>
+          </button>
         </div>
       )}
     </div>

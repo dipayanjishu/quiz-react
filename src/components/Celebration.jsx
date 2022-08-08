@@ -9,7 +9,6 @@ const Celebration = ({
   stop,
   setQuestionNumber,
   playBut,
-  background,
 }) => {
   const [celeb] = useSound(celeb_tone);
   celeb();
@@ -17,14 +16,13 @@ const Celebration = ({
   const handleclick = () => {
     setQuestionNumber(1);
     setUsername(null);
-    background.pause();
   };
   return (
     <div className="celeb">
-      <img src={ghungru} alt="" className="imagee" />
+      <img src={ghungru} alt="" className="imageeCel" />
       <h1 className="result">
         <div className="message">
-          {username} earned: <BiRupee />
+          {username.toUpperCase()} earned: <BiRupee />
           1,00,00,000
         </div>
       </h1>

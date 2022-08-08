@@ -47,6 +47,12 @@ const App = () => {
       setEarned(moneyPyramid.find((m) => m.id === questionNumber - 1).amount);
   }, [moneyPyramid, questionNumber]);
 
+  const handleClick = () => {
+    setUsername(null);
+    setStop(false);
+    setQuestionNumber(1);
+    setEarned(0);
+  };
   return (
     <div className="app">
       {username ? (
@@ -54,15 +60,24 @@ const App = () => {
           {/* MAIN  */}
           <div className="main">
             {stop ? (
-              <>
+              <div className="bye">
+                <img src={Face} alt="" className="imagee" />
                 <h1 className="result">
-                  <img src={Face} alt="" className="imagee" />
                   <div className="message">
-                    {username} earned: <BiRupee />
+                    {username.toUpperCase()} earned: <BiRupee />
                     {earned}
                   </div>
                 </h1>
-              </>
+                <div
+                  className="resetGame"
+                  onClick={handleClick}
+                  // onMouseEnter={() => {
+                  //   playBut();
+                  // }}
+                >
+                  PLAY AGAIN
+                </div>
+              </div>
             ) : (
               <>
                 <div className="bottom">

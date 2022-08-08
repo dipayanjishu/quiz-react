@@ -9,6 +9,7 @@ export default function Start({ setUsername }) {
 
   return (
     <div className="start">
+      <h1 className="titleSquezze">SQUEZZE</h1>
       <input
         placeholder="Enter ur name"
         className="startInput"
