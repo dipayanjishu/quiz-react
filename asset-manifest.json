@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quiz-react/static/css/main.b5dcb42c.css",
-    "main.js": "/quiz-react/static/js/main.227ea108.js",
+    "main.css": "/quiz-react/static/css/main.8796b70d.css",
+    "main.js": "/quiz-react/static/js/main.ce7baaac.js",
     "static/media/background.mp3": "/quiz-react/static/media/background.2b4e0c695f87fdf4ec7d.mp3",
     "static/media/ticktock.mp3": "/quiz-react/static/media/ticktock.0e137ed02df4df7c28c3.mp3",
     "static/media/ghungru.gif": "/quiz-react/static/media/ghungru.15b59a59c11b369a43da.gif",
@@ -13,11 +13,11 @@
     "static/media/tudung tudung.mp3": "/quiz-react/static/media/tudung tudung.9edcac099999add579e2.mp3",
     "static/media/buzzer.mp3": "/quiz-react/static/media/buzzer.f2143a33b4e146194b8d.mp3",
     "index.html": "/quiz-react/index.html",
-    "main.b5dcb42c.css.map": "/quiz-react/static/css/main.b5dcb42c.css.map",
-    "main.227ea108.js.map": "/quiz-react/static/js/main.227ea108.js.map"
+    "main.8796b70d.css.map": "/quiz-react/static/css/main.8796b70d.css.map",
+    "main.ce7baaac.js.map": "/quiz-react/static/js/main.ce7baaac.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5dcb42c.css",
-    "static/js/main.227ea108.js"
+    "static/css/main.8796b70d.css",
+    "static/js/main.ce7baaac.js"
   ]
 }
