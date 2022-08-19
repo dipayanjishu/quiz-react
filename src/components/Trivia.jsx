@@ -1,18 +1,20 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
+import { AiFillSound } from "react-icons/ai";
 import Timer from "./Timer";
 import Celebration from "./Celebration";
 import { Howl, Howler } from "howler";
 
 import useSound from "use-sound";
 import correct from "../assets/mainak khanki.mp3";
-import wrong from "../assets/babu mere chole galo.mp3";
-import play from "../assets/tudung tudung.mp3";
+import wrong from "../assets/babu mere chole galo.wav";
+// import play from "../assets/tudung tudung.mp3";
 
 import hoverBut from "../assets/hover.mp3";
 import buzzer from "../assets/buzzer.mp3";
 import clock from "../assets/ticktock.mp3";
-import back from "../assets/background.mp3";
+import back from "../assets/backgroundjuzz.mp3";
+import nextSound from "../assets/nextSound.wav";
 
 const Trivia = ({
   username,
@@ -28,6 +30,7 @@ const Trivia = ({
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [className, setClassName] = useState("answer");
   const [click, setClick] = useState(false);
+  const [bgsound, setbgsound] = useState(false);
   //soundeffects
 
   var background = new Howl({
@@ -36,19 +39,24 @@ const Trivia = ({
   });
   background.volume(0.1);
 
-  // background.play();
+  let buzzerLock = new Howl({
+    src: buzzer,
+    html5: true,
+  });
+  buzzerLock.volume(0.3);
 
-  const [letsPlay] = useSound(play);
+  // const [letsPlay] = useSound(play);
   const [correctAnswer] = useSound(correct);
   const [wrongAnswer] = useSound(wrong);
 
   const [playBut] = useSound(hoverBut);
-  const [buzzerLock] = useSound(buzzer);
+  // const [buzzerLock] = useSound(buzzer);
+  const [nextS] = useSound(nextSound);
   const [playClock, { stop }] = useSound(clock);
 
-  useEffect(() => {
-    letsPlay();
-  }, [letsPlay]);
+  // useEffect(() => {
+  //   letsPlay();
+  // }, [letsPlay]);
 
   useEffect(() => {
     playClock();
@@ -66,6 +74,11 @@ const Trivia = ({
   };
 
   const handleNext = () => {
+    if (questionNumber < 11) {
+      nextS();
+    }
+
+    stop();
     setQuestionNumber((prev) => prev + 1);
     setSelectedAnswer(null);
     setNext(false);
@@ -73,33 +86,47 @@ const Trivia = ({
 
   const handleClick = (a) => {
     stop();
-    buzzerLock();
+
+    buzzerLock.play();
     setClick(true);
     setSelectedAnswer(a);
     setClassName("answer active");
 
-    delay(3000, () =>
+    delay(1000, () =>
       setClassName(a.correct ? "answer correct" : "answer wrong")
     );
 
     if (a.correct) {
       setTimeout(() => {
         correctAnswer();
-      }, 5000);
+      }, 2800);
       setTimeout(() => {
         setNext(true);
-      }, 7000);
+      }, 3000);
     } else {
       setTimeout(() => {
         setStop(true);
         wrongAnswer();
-      }, 6000);
+      }, 3500);
+    }
+  };
+  ///SOUND BACKGROUND
+  const handleSound = () => {
+    console.log(bgsound);
+
+    if (bgsound === false) {
+      var a1 = background.play();
+      setbgsound(true);
+    }
+    if (bgsound === true) {
+      background.pause(a1);
+      setbgsound(false);
     }
   };
 
   return (
     <div className="celeb">
-      {questionNumber === 11 ? (
+      {questionNumber === 10 ? (
         <Celebration
           username={username}
           setUsername={setUsername}
@@ -110,6 +137,10 @@ const Trivia = ({
       ) : (
         <div className="trivia">
           <div className="top">
+            <button type="button" className="m" onClick={handleSound}>
+              <AiFillSound />
+            </button>
+
             <div className="timer">
               <Timer
                 setStop={setStop}

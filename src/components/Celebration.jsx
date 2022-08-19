@@ -1,6 +1,6 @@
 import useSound from "use-sound";
-import celeb_tone from "../assets/ghungru badha.mp3";
-import ghungru from "../assets/ghungru.gif";
+import celeb_tone from "../assets/ghungru badha.wav";
+// import ghungru from "../assets/ghungru.gif";
 import { BiRupee } from "react-icons/bi";
 
 const Celebration = ({
@@ -19,7 +19,6 @@ const Celebration = ({
   };
   return (
     <div className="celeb">
-      <img src={ghungru} alt="" className="imageeCel" />
       <h1 className="result">
         <div className="message">
           {username.toUpperCase()} earned: <BiRupee />

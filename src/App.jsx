@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import "./app.css";
 import { BiRupee } from "react-icons/bi";
 import Trivia from "./components/Trivia";
-import Face from "./assets/bagha face.png";
+// import Face from "./assets/bagha face.png";
 import Start from "./components/Start";
 import { Data } from "./components/Data.js";
 
@@ -47,12 +47,14 @@ const App = () => {
       setEarned(moneyPyramid.find((m) => m.id === questionNumber - 1).amount);
   }, [moneyPyramid, questionNumber]);
 
+  //FOR PLAY AGAIN
   const handleClick = () => {
     setUsername(null);
     setStop(false);
     setQuestionNumber(1);
     setEarned(0);
   };
+
   return (
     <div className="app">
       {username ? (
@@ -61,9 +63,8 @@ const App = () => {
           <div className="main">
             {stop ? (
               <div className="bye">
-                <img src={Face} alt="" className="imagee" />
-                <h1 className="result">
-                  <div className="message">
+                <h1 className="resultbye">
+                  <div className="messagebye">
                     {username.toUpperCase()} earned: <BiRupee />
                     {earned}
                   </div>

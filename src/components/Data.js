@@ -1,62 +1,63 @@
 const Data = [
   {
-    id: 1,
-    question: "Mainak?",
+    // id: 1,
+    question: "	Grand Central Terminal, Park Avenue, New York is the world's",
     answers: [
       {
-        text: "Pod Byabsayi",
-        correct: false,
-      },
-      {
-        text: "Khanki",
+        text: "largest railway station",
         correct: true,
       },
       {
-        text: "Babu marani",
+        text: "highest railway station",
         correct: false,
       },
       {
-        text: "Pod marani",
+        text: "smallest railway station",
+        correct: false,
+      },
+      {
+        text: "longest railway station",
         correct: false,
       },
     ],
   },
   {
-    id: 2,
-    question: "Potol?",
+    // id: 2,
+    question:
+      "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
     answers: [
       {
-        text: "Bokachoda",
+        text: "Transformers",
+        correct: false,
+      },
+      {
+        text: "Care Bears",
+        correct: false,
+      },
+      {
+        text: "Cabbage Patch Kids",
         correct: true,
       },
       {
-        text: "merachoda",
-        correct: false,
-      },
-      {
-        text: "bhalo chele",
-        correct: false,
-      },
-      {
-        text: "gudmarani",
+        text: "Rubik&rsquo;s Cube",
         correct: false,
       },
     ],
   },
   {
     id: 3,
-    question: "Frag?",
+    question: "Which sign of the zodiac is represented by the Crab?",
     answers: [
       {
-        text: "Toxic",
+        text: "Libra",
         correct: false,
       },
       {
-        text: "Chapri",
+        text: "Virgo",
         correct: false,
       },
       {
-        text: "laura",
+        text: "Sagittarius",
         correct: false,
       },
       {
@@ -67,152 +68,154 @@ const Data = [
   },
   {
     id: 4,
-    question: "Atharv?",
+    question:
+      "Which driver has been the Formula 1 world champion for a record 7 times?",
     answers: [
       {
-        text: "Buro butKhara",
-        correct: true,
-      },
-      {
-        text: "Buro Choda",
+        text: "Ayrton Senna",
         correct: false,
       },
       {
-        text: "Kana Choda",
+        text: "Fernando Alonso",
         correct: false,
       },
-      { text: "Gamcha", correct: false },
+      {
+        text: "Jim Clark",
+        correct: false,
+      },
+      { text: "Michael Schumacher", correct: true },
     ],
   },
   {
     id: 5,
-    question: "Abhijnan Da?",
+    question: "The body of the Egyptian Sphinx was based on which animal?",
     answers: [
       {
-        text: "Scientist",
-        correct: false,
-      },
-      {
-        text: "entrepreneur",
-        correct: false,
-      },
-      {
-        text: "Hell-info",
-        correct: false,
-      },
-      {
-        text: "Ovi-Jonon Da",
+        text: "Lion",
         correct: true,
+      },
+      {
+        text: "Bull",
+        correct: false,
+      },
+      {
+        text: "Horse",
+        correct: false,
+      },
+      {
+        text: "Dog",
+        correct: false,
       },
     ],
   },
   {
     id: 6,
-    question: "Doctor?",
+    question: "What is the capital of the American state of Arizona?",
     answers: [
       {
-        text: "Torque",
+        text: "Montgomery",
         correct: false,
       },
       {
-        text: "Birjo Sen",
+        text: "Tallahassee",
+        correct: false,
+      },
+      {
+        text: "Phoenix",
         correct: true,
       },
       {
-        text: "Bichi Chos",
-        correct: false,
-      },
-      {
-        text: "Futor",
+        text: "Raleigh",
         correct: false,
       },
     ],
   },
   {
     id: 7,
-    question: "Prime?",
+    question: "What is the 15th letter of the Greek alphabet?",
     answers: [
       {
-        text: "Private",
-        correct: false,
-      },
-      {
-        text: "Clash of fun",
-        correct: false,
-      },
-      {
-        text: "Bibahito",
+        text: "Omicron (&Omicron;)",
         correct: true,
       },
       {
-        text: "Amazon",
+        text: "Sigma (&Sigma;)",
+        correct: false,
+      },
+      {
+        text: "Pi (&Pi;)",
+        correct: false,
+      },
+      {
+        text: "Nu (&Nu;)",
         correct: false,
       },
     ],
   },
   {
     id: 8,
-    question: "Jishu?",
+    question: "Bagha main profession?",
     answers: [
       {
-        text: "Dipayan",
-        correct: true,
-      },
-      {
-        text: "Bhalo chele",
-        correct: true,
-      },
-      {
-        text: "Bokachoda",
+        text: "Part-time Streamer",
         correct: false,
       },
       {
-        text: "Jishu",
+        text: "SonaGachir Dalal",
+        correct: false,
+      },
+      {
+        text: "Raj Mistiri",
+        correct: false,
+      },
+      {
+        text: "Pod Bikreta",
         correct: true,
       },
     ],
   },
   {
     id: 9,
-    question: "Natu?",
+    question:
+      "How many countries does the United States share a land border with?",
     answers: [
       {
-        text: "Borolok",
+        text: "1",
+        correct: false,
+      },
+      {
+        text: "2",
         correct: true,
       },
       {
-        text: "KotiPoti",
+        text: "3",
         correct: false,
       },
       {
-        text: "Dhon kuber",
-        correct: false,
-      },
-      {
-        text: "Big Bull",
+        text: "4",
         correct: false,
       },
     ],
   },
   {
     id: 10,
-    question: "Bagha?",
+    question: "What is the Capital of the United States?",
     answers: [
       {
-        text: "Khankir chele",
-        correct: false,
-      },
-      {
-        text: "Khan Bahadur",
-        correct: false,
-      },
-      {
-        text: "laura",
-        correct: false,
-      },
-      {
-        text: "Bessaa no 1",
+        text: "Washington, D.C.",
         correct: true,
+      },
+      {
+        text: "Los Angelas",
+        correct: false,
+      },
+      {
+        text: "New York",
+        correct: false,
+      },
+      {
+        text: "Houston",
+        correct: false,
       },
     ],
   },
